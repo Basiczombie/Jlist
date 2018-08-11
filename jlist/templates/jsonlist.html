@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% get_media_prefix as MEDIA_PREFIX %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="column column-75">
+            <h2>Json Files</h2>
+        </div>
+        <div class="column">
+            <a class="button" href="{% url 'jlist:create' %}">Upload</a>
+        </div>
+    </div>
+    
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>File</th>
+                <th>Size</th>
+                <th>User</th>
+                <th>Uploaded</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for item in object_list %}
+            <tr>
+                <td>
+                    <a href="{% url 'jlist:download' pk=item.pk %}">
+                        {{ item.jfile.name }}
+                    </a>
+                </td>
+                <td>{{ item.jfile.size }} bytes</td>
+                <td>{{ item.user }}</td>
+                <td>{{ item.upload_date }}</td>
+            </tr>    
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

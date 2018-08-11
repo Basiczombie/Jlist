@@ -1,0 +1,5 @@
+empire/
+node_modules/
+.vscode/
+media/
+static/
