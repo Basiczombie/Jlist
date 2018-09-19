@@ -23,6 +23,7 @@ JList is a web application designed to serve JSON uploaded files.
 ### Design Process:
 
 **Models**
+
 JList was approached from the models up. By reviewing the required features of the project a set of data points were identified to best represent the need for the application. Understanding the data needs for the application at the start is always the best guide to inform later decisions.
 
 *JList required four data points:*
