@@ -42,6 +42,7 @@ JList was approached from the models up. By reviewing the required features of t
 Adding a str method to return the filename from the filefield upon any querying is highly recommended. In addition Setting verbose_name_plural in the models meta class and a preset ordering is also helpful.
 
 **Views**
+
 In Django the View is the controller in the MVC model. With the data identified and represented in the models it is now possible to create controllers that will be linked by urls and templates to render data.
 
 By the features required JList needs to be able render a full list of all uploaded JSON files, sort that list by user group, allow a user to download a uploaded file, and allow for users to upload files.
