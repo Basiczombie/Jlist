@@ -141,7 +141,7 @@ Now that all the backend data has been determined all that remains are the [temp
 - Setting up a CSS framework like Bootstrap, Materialize, Foundation, or other can be done here.
 
 ***JSON List HTML***
-- This template will need to render the data from ```JsonListView```.
+- This template will need to [render][20] the data from ```JsonListView```.
 - The following items are required to be displayed.
     - File
     - Size
@@ -152,11 +152,11 @@ Now that all the backend data has been determined all that remains are the [temp
 
 ***Jfile Form HTML***
 - The Django ```{{ form }}``` will need to be wrapped in a ```form``` tag.
-- [Example][20] of a Django html form setup.
+- [Example][21] of a Django html form setup.
 - Ensure that the ```form``` tag has the following:
     - ``` method="post"```
     - ```enctype="multipart/form-data"```
-    - The file will not be accepted if the [enctype][21] is not set.
+    - The file will not be accepted if the [enctype][22] is not set.
 - Ensure that within the ```form``` tag the ```{% csrf_token %}``` is set. Without it the file will not be accepted.
 - Django formfactory will generate all the fields in the HTML that were defined in the Forms.py.
 
@@ -179,5 +179,6 @@ Now that all the backend data has been determined all that remains are the [temp
 [17]: https://docs.djangoproject.com/en/2.1/topics/http/urls/#example
 [18]: https://docs.djangoproject.com/en/2.1/ref/contrib/admin/#module-django.contrib.admin
 [19]: https://docs.djangoproject.com/en/2.1/ref/templates/language/
-[20]: https://docs.djangoproject.com/en/2.1/topics/forms/#the-template
-[21]: https://www.w3schools.com/TAGS/att_form_enctype.asp
+[20]: https://docs.djangoproject.com/en/2.1/ref/templates/builtins/#for
+[21]: https://docs.djangoproject.com/en/2.1/topics/forms/#the-template
+[22]: https://www.w3schools.com/TAGS/att_form_enctype.asp
